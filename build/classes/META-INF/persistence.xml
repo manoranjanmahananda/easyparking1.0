@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	
+	<!-- Default (No TreeCache) -->
+	<!--   -->
+	<persistence-unit name="easyparking">
+		<mapping-file>META-INF/ormdef.xml</mapping-file>
+			<class>com.easyparking.entity.CarInfo</class>
+			<class>com.easyparking.entity.CarParkingMapping</class>
+			<class>com.easyparking.entity.Parker</class>
+			<class>com.easyparking.entity.ParkingLot</class>
+			<class>com.easyparking.entity.User</class>
+			<class>com.easyparking.entity.UserCarMapping</class>
+			
+		<exclude-unlisted-classes/>		
+	</persistence-unit>
+</persistence>
